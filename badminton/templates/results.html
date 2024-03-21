@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #ffd1dc;
+            padding: 20px;
+            border-bottom: 2px solid #007bff;
+            flex-shrink: 0; /* Prevent header from shrinking */
+        }
+
+        h1 {
+            color: #007bff;
+            font-family: 'Arial', sans-serif;
+            font-weight: bold;
+            font-size: 36px;
+            text-align: center;
+            margin-top: 0; /* Remove default margin */
+        }
+
+        span {
+            font-size: 24px;
+        }
+
+        .container {
+            flex-grow: 1; /* Allow container to grow and fill remaining space */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center content vertically */
+            align-items: center; /* Center content horizontally */
+        }
+
+        footer {
+            background-color: #fff9c6;
+            padding: 20px;
+            border-top: 2px solid #007bff;
+            text-align: center;
+            margin-top: auto; /* Stick footer to the bottom */
+            flex-shrink: 0; /* Prevent footer from shrinking */
+        }
+
+        p {
+            margin: 10px 0;
+            font-family: 'Arial', sans-serif;
+            font-size: 16px;
+            color: #007bff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>
+            Sentiment Analysis Tested Results 
+            <span>📊</span>
+        </h1>
+    </header>
+
+    <div class="container mt-5">
+        <h2 style="color:orange">Result</h2>
+        <p><b>Text:</b> {{ text }}</p>
+        <p style="color:green"><b style="color:black">Sentiment:</b> {{ sentiment }}</p>
+    </div>
+
+    
+</body>
+
+</html>
